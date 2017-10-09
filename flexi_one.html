@@ -1,0 +1,18 @@
+<div class="w3-row-padding aaa">
+   <div ng-repeat= " ii in data.litems.resppp " class="w3-third w3-container w3-margin-bottom">
+   <a class = "foraddtocart">
+      <img src = "images/items/{{ii.image}}"  alt="{{ii.image}}" style="width:100%" class="w3-hover-opacity">
+	 </a>
+    <div class="w3-container w3-white">
+    <p><b>{{ii.enterprise}}</b></p>
+		<button ng-if="mes.indexOf(ii)==-1" class="add" ng-click="addtocart(ii)"
+      class="w3-btn w3-black w3-padding-large w3-hover-red add">Добавить в корзину
+    </button>
+    <button ng-if="mes.indexOf(ii)!==-1" class="add" ng-click="addtocart(ii)"
+      class="w3-btn w3-black w3-padding-large w3-hover-red add">В корзине
+    </button>
+
+                                                      <!--29/01/17 нужны параметры для товара -->
+    </div>
+    </div>
+	  </div>

@@ -1,0 +1,26 @@
+
+<div ng-if="data.items.resppp.length >= 3" ng-repeat="i in (data.items.resppp.length/3 | roww)"  class="w3-row-padding aaa">
+
+ <div ng-repeat="ii in data.items.resppp.slice(3*$index, 3*$index+3) " class="w3-third w3-container w3-margin-bottom" >
+ <a  ui-sref="forflexiname({ vid: ii.vse_vidi_tov })"  class="dog_flexi" data-function='flexi' data-param='flexi.php' data-url='flexi'  data-vid='{{ii.vse_vidi_tov}}' >
+      <img src="images/{{ii.image}}" alt="{{image}}" style="width:70%; display:block; margin:auto;" class="w3-hover-opacity">
+	  </a>
+      <div class="w3-container w3-white">
+        <p onclick='forimages();'><b>{{ii.vse_vidi_tov}}</b></p>
+		<ul class="w3-ul">
+
+  <li  ng-repeat="nn in t | splitTitle:ii.brends">
+    <h7>
+      <a class="flexi-tov">
+      <!--{{ii.brends | splitTitle:ii.brends}} -->
+{{nn}}
+      </a>
+    </h7>
+  </li>
+
+    </ul>
+      </div>
+    </div>
+
+
+  </div>

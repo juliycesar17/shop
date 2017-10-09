@@ -1,0 +1,18 @@
+
+<div ng-if="data.pitems.resppp.length < 3 "  class="w3-row-padding aaa">
+<!--<div ng-if="data.pitems.resppp.length > 3" ng-repeat="i in (data.pitems.resppp.length/3 | roww)"  class="w3-row-padding aaa">-->
+<div id="pp"  ng-repeat="ii in data.pitems.resppp  " class="w3-third w3-container w3-margin-bottom" >
+<!-- <div id="io" ng-if="data.pitems.resppp.length >= 3" ng-repeat="ii in data.pitems.resppp.slice(3*$index, 3*$index+3) " class="w3-third w3-container w3-margin-bottom">-->
+
+   <a ui-sref="forflexitovari({ vid: '{{vid}}', brand:'{{ii.brend}}' })">
+        <img src="images/brends/{{ii.image}}" alt="{{image}}" style="width:100%" class="w3-hover-opacity">
+      </a>
+        <div class="w3-container w3-white">
+          <p><b>{{ii.brend}}</b></p>
+            <p><b>{{vid}}</b></p>
+            <div class="">
+              {{vvv}}
+            </div>
+        </div>
+  </div>
+</div>

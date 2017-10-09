@@ -1,0 +1,23 @@
+<div  class="w3-container">
+  <h2>Корзина</h2>
+
+  <table  class="w3-table w3-bordered">
+  <tr>
+      <th>название товара</th>
+      <th>цена</th>
+      <th>товар</th>
+	   <th></th>
+    </tr>
+
+    <tr ng-repeat="i in cart">
+      <th>{{i.id.ice_cream}}</th>
+      <th>{{i.id.enterprise}}</th>
+      <th><img src='images/items/{{i.id.image}}'/></th>
+	  <th><button ><a  >+</a></button></th>
+	   <th><input type='text' value='{{i.count}}'/></th>
+	   <th><button><a  >-</a></button></th>
+		 <th><button><a >удалить</a></button></th>
+    </tr>
+
+  </table>
+</div>
